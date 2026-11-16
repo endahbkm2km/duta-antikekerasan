@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aku Duta Anti Kekerasan — MAN 2 Kota Malang</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Plus Jakarta Sans & Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Plus Jakarta Sans', 'sans-serif'],
+                        body: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        skyBase: '#E0F2FE',
+                        skyAccent: '#38BDF8',
+                        skyDeep: '#0284C7',
+                        lemonSoft: '#FEF08A',
+                        lemonBright: '#FACC15',
+                        lemonDeep: '#CA8A04',
+                        mintSoft: '#DCFCE7',
+                        mintBright: '#4ADE80',
+                        mintDeep: '#16A34A',
+                        slateInk: '#0F172A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #F0F9FF;
+            background-image: 
+                radial-gradient(at 0% 0%, #E0F2FE 0px, transparent 50%),
+                radial-gradient(at 100% 0%, #DCFCE7 0px, transparent 45%),
+                radial-gradient(at 50% 100%, #FEF9C3 0px, transparent 50%);
+            color: #0F172A;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(12px);
+            border: 1.5px solid rgba(14, 165, 233, 0.22);
+            box-shadow: 0 10px 28px -6px rgba(2, 132, 199, 0.08);
+        }
+
+        .btn-interactive {
+            transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        .btn-interactive:hover {
+            transform: translateY(-2px);
+        }
+        .btn-interactive:active {
+            transform: translateY(1px) scale(0.99);
+        }
+
+        @keyframes fadeSlideUp {
+            from { opacity: 0; transform: translateY(12px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-enter {
+            animation: fadeSlideUp 0.35s ease-out forwards;
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.45); }
+            50% { box-shadow: 0 0 0 8px rgba(250, 204, 21, 0); }
+        }
+        .badge-glow {
+            animation: pulseGlow 2.5s infinite;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #E0F2FE; }
+        ::-webkit-scrollbar-thumb { background: #7DD3FC; border-radius: 999px; }
+        ::-webkit-scrollbar-thumb:hover { background: #38BDF8; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- ===================================================================== -->
+    <!-- HEADER: IDENTITAS PROGRAM & INDIKATOR SKOR EMPATI DUTA                -->
+    <!-- ===================================================================== -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-sky-200/80 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-3">
+            <!-- Logo & Judul -->
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-skyAccent via-skyDeep to-mintDeep p-0.5 shadow-md shrink-0">
+                    <div class="w-full h-full bg-white rounded-[14px] flex items-center justify-center">
+                        <!-- Custom SVG Emblem Perisai Hati & Bintang -->
+                        <svg class="w-8 h-8" viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4L8 11V23C8 33.5 14.8 42.6 24 45C33.2 42.6 40 33.5 40 23V11L24 4Z" fill="#E0F2FE" stroke="#0284C7" stroke-width="3" stroke-linejoin="round"/>
+                            <path d="M24 33C24 33 15 27.2 15 20.5C15 17.8 17.1 15.8 19.7 15.8C21.5 15.8 23.1 16.8 24 18.2C24.9 16.8 26.5 15.8 28.3 15.8C30.9 15.8 33 17.8 33 20.5C33 27.2 24 33 24 33Z" fill="#4ADE80" stroke="#16A34A" stroke-width="2"/>
+                            <circle cx="35" cy="11" r="5" fill="#FACC15" stroke="#CA8A04" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex flex-wrap items-center gap-1.5">
+                        <span class="bg-mintSoft text-mintDeep text-[11px] font-extrabold px-2.5 py-0.5 rounded-full border border-mintBright/50 tracking-wide">
+                            TPPK • MAN 2 KOTA MALANG
+                        </span>
+                        <span class="hidden sm:inline-block bg-skyBase text-skyDeep text-[11px] font-bold px-2 py-0.5 rounded-full">
+                            PPKSP Madrasah
+                        </span>
+                    </div>
+                    <h1 class="text-lg sm:text-xl font-extrabold text-slateInk leading-tight mt-0.5">
+                        Aku Duta Anti Kekerasan
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Panel Skor Empati & Kontrol Suara -->
+            <div class="flex items-center gap-2.5 sm:gap-3">
+                <button onclick="toggleAudio()" id="audioBtn" class="p-2.5 rounded-2xl bg-skyBase/70 hover:bg-skyBase text-skyDeep border border-sky-200 transition-colors flex items-center gap-1.5 text-xs font-bold" title="Suara Efek Lembut">
+                    <span id="audioIcon">🔔</span>
+                    <span class="hidden md:inline" id="audioText">Suara On</span>
+                </button>
+
+                <div class="flex items-center gap-3 bg-gradient-to-r from-skyBase/80 via-lemonSoft/60 to-mintSoft/80 px-3.5 py-2 rounded-2xl border border-sky-300/60">
+                    <div class="flex items-center gap-1.5">
+                        <span class="text-xl">💛</span>
+                        <div>
+                            <div class="text-[10px] font-extrabold uppercase tracking-wider text-slate-600 leading-none">Skor Empati</div>
+                            <div class="font-display font-extrabold text-base sm:text-lg text-slateInk leading-tight">
+                                <span id="empathyPoints">0</span> <span class="text-xs font-bold text-skyDeep">Poin</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-7 w-px bg-sky-300/70"></div>
+
+                    <div class="hidden sm:block">
+                        <div class="text-[10px] font-extrabold uppercase tracking-wider text-slate-600 leading-none">Status Duta</div>
+                        <div id="ambassadorRankBadge" class="text-xs font-extrabold text-mintDeep mt-0.5">
+                            🌱 Sahabat Peduli
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigasi 4 Modul Utama -->
+        <nav class="max-w-7xl mx-auto px-4 pb-3 pt-1">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 bg-skyBase/50 p-1.5 rounded-2xl border border-sky-200/80">
+                <button onclick="switchModule('peta')" id="nav-peta" class="nav-tab btn-interactive py-2.5 px-3 rounded-xl font-display font-bold text-xs sm:text-sm flex items-center justify-center gap-2 bg-white text-skyDeep shadow-sm border border-sky-200">
+                    <span class="text-base">🗺️</span>
+                    <span>1. Peta 6 Bentuk Kekerasan</span>
+                </button>
+                <button onclick="switchModule('simulasi')" id="nav-simulasi" class="nav-tab btn-interactive py-2.5 px-3 rounded-xl font-display font-bold text-xs sm:text-sm flex items-center justify-center gap-2 text-slate-600 hover:bg-white/60">
+                    <span class="text-base">🎭</span>
+                    <span>2. Simulasi Keputusanmu</span>
+                </button>
+                <button onclick="switchModule('alur')" id="nav-alur" class="nav-tab btn-interactive py-2.5 px-3 rounded-xl font-display font-bold text-xs sm:text-sm flex items-center justify-center gap-2 text-slate-600 hover:bg-white/60">
+                    <span class="text-base">🛡️</span>
+                    <span>3. Alur & Kotak Lapor TPPK</span>
+                </button>
+                <button onclick="switchModule('sertifikasi')" id="nav-sertifikasi" class="nav-tab btn-interactive py-2.5 px-3 rounded-xl font-display font-bold text-xs sm:text-sm flex items-center justify-center gap-2 text-slate-600 hover:bg-white/60">
+                    <span class="text-base">🪪</span>
+                    <span>4. Kartu Duta & Ikrar</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- KONTEN UTAMA APLIKASI                                                 -->
+    <!-- ===================================================================== -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 py-6">
+
+        <!-- ================================================================= -->
+        <!-- MODUL 1: PETA 6 BENTUK KEKERASAN (REGULASI PPKSP MADRASAH)        -->
+        <!-- ================================================================= -->
+        <section id="module-peta" class="space-y-6 animate-enter">
+            <!-- Hero Banner Modul 1 -->
+            <div class="glass-card rounded-3xl p-5 sm:p-6 bg-gradient-to-r from-skyBase/90 via-white to-mintSoft/80 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                <div class="space-y-1.5 max-w-3xl">
+                    <div class="inline-flex items-center gap-1.5 bg-lemonSoft text-lemonDeep px-3 py-1 rounded-full text-xs font-extrabold border border-lemonBright">
+                        <span>📖</span> Permendikbudristek No. 46 Tahun 2023 & Keputusan Dirjen Pendis Kemenag
+                    </div>
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-slateInk">
+                        Kenali 6 Bentuk Kekerasan di Lingkungan Madrasah & Ruang Digital
+                    </h2>
+                    <p class="text-sm text-slate-600 font-semibold leading-relaxed">
+                        Sering kali kekerasan bersembunyi di balik alasan <em>"cuma bercanda"</em>, <em>"tradisi senioritas"</em>, atau <em>"iseng di grup WhatsApp"</em>. Klik setiap kartu kasus di bawah untuk membedah situasi nyata dan dampak psikologisnya!
+                    </p>
+                </div>
+                <div class="bg-white/90 border border-sky-200 rounded-2xl p-3.5 shrink-0 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-mintSoft text-mintDeep flex items-center justify-center font-display font-extrabold text-lg">
+                        <span id="exploredFormsCount">1</span>/6
+                    </div>
+                    <div class="text-xs">
+                        <div class="font-extrabold text-slateInk">Bentuk Dipelajari</div>
+                        <div class="text-slate-500 font-semibold">+10 Poin Empati tiap kartu</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Selector 6 Bentuk Kekerasan -->
+            <div id="sixFormsGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+                <!-- Dirender via JS -->
+            </div>
+
+            <!-- Panel Detail Interaktif Bentuk Kekerasan Terpilih -->
+            <div id="formDetailContainer" class="glass-card rounded-3xl overflow-hidden">
+                <!-- Dirender via JS -->
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- MODUL 2: SIMULASI INTERAKTIF "APA KEPUTUSANMU?"                   -->
+        <!-- ================================================================= -->
+        <section id="module-simulasi" class="hidden space-y-6 animate-enter">
+            <!-- Header Modul 2 -->
+            <div class="glass-card rounded-3xl p-5 sm:p-6 bg-gradient-to-r from-lemonSoft/70 via-white to-skyBase/80 flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div>
+                    <span class="bg-skyBase text-skyDeep text-xs font-extrabold px-3 py-1 rounded-full border border-sky-300">
+                        🎭 LATIHAN ACTIVE BYSTANDER (SAKSI AKTIF)
+                    </span>
+                    <h2 class="text-xl sm:text-2xl font-extrabold text-slateInk mt-1.5">
+                        Simulasi Situasi: Apa Keputusanmu Sebagai Duta?
+                    </h2>
+                    <p class="text-sm text-slate-600 font-semibold mt-0.5">
+                        Uji kepekaan psikologis dan keberanianmu menghadapi dilema sosial di kelas, organisasi, maupun media sosial MAN 2 Kota Malang.
+                    </p>
+                </div>
+                <div class="bg-white px-4 py-2.5 rounded-2xl border border-lemonBright/80 text-xs font-extrabold text-slateInk shrink-0">
+                    Skenario Selesai: <span id="completedSimCount" class="text-skyDeep text-base">0</span> / 4
+                </div>
+            </div>
+
+            <!-- Selector 4 Skenario -->
+            <div id="scenarioSelectorRow" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                <!-- Dirender via JS -->
+            </div>
+
+            <!-- Panggung Visual Novel / Dialog Interaktif -->
+            <div id="scenarioStage" class="glass-card rounded-3xl p-5 sm:p-7">
+                <!-- Dirender via JS -->
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- MODUL 3: ALUR RESMI & SIMULASI KOTAK LAPOR TPPK                   -->
+        <!-- ================================================================= -->
+        <section id="module-alur" class="hidden space-y-6 animate-enter">
+            <!-- Header & 4 Prinsip Perlindungan TPPK -->
+            <div class="glass-card rounded-3xl p-5 sm:p-6 space-y-5">
+                <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 border-b border-sky-100 pb-4">
+                    <div>
+                        <span class="bg-mintSoft text-mintDeep text-xs font-extrabold px-3 py-1 rounded-full border border-mintBright">
+                            🛡️ TIM PENCEGAHAN & PENANGANAN KEKERASAN (TPPK)
+                        </span>
+                        <h2 class="text-xl sm:text-2xl font-extrabold text-slateInk mt-1.5">
+                            Mekanisme Penanganan Resmi & Ruang Lapor Aman MAN 2 Kota Malang
+                        </h2>
+                        <p class="text-sm text-slate-600 font-semibold mt-0.5">
+                            Melapor bukanlah "mengadu" atau "lemah", melainkan langkah berani memutus rantai kekerasan dan melindungi sesama teman.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 4 Prinsip Utama Perlindungan Korban & Pelapor -->
+                <div>
+                    <h3 class="text-sm font-extrabold uppercase tracking-wider text-skyDeep mb-3">
+                        4 Jaminan Perlindungan Utama TPPK untuk Pelapor & Korban:
+                    </h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+                        <div class="bg-skyBase/60 border border-sky-200 rounded-2xl p-4">
+                            <div class="w-9 h-9 rounded-xl bg-white text-skyDeep flex items-center justify-center text-lg mb-2 shadow-sm">🔒</div>
+                            <h4 class="font-display font-bold text-sm text-slateInk">Kerahasiaan Identitas</h4>
+                            <p class="text-xs text-slate-600 font-semibold mt-1">Identitas pelapor, korban, dan saksi dijaga ketat kerahasiaannya oleh anggota TPPK & Guru BK.</p>
+                        </div>
+                        <div class="bg-mintSoft/70 border border-mintBright/50 rounded-2xl p-4">
+                            <div class="w-9 h-9 rounded-xl bg-white text-mintDeep flex items-center justify-center text-lg mb-2 shadow-sm">🤝</div>
+                            <h4 class="font-display font-bold text-sm text-slateInk">Berpihak pada Korban</h4>
+                            <p class="text-xs text-slate-600 font-semibold mt-1">Mengutamakan pemulihan psikologis, keselamatan, dan hak belajar korban (<em>victim-centered</em>).</p>
+                        </div>
+                        <div class="bg-lemonSoft/70 border border-lemonBright/60 rounded-2xl p-4">
+                            <div class="w-9 h-9 rounded-xl bg-white text-lemonDeep flex items-center justify-center text-lg mb-2 shadow-sm">⚖️</div>
+                            <h4 class="font-display font-bold text-sm text-slateInk">Non-Diskriminasi</h4>
+                            <p class="text-xs text-slate-600 font-semibold mt-1">Setiap laporan ditangani adil tanpa memandang status kelas, organisasi, atau latar belakang.</p>
+                        </div>
+                        <div class="bg-skyBase/60 border border-sky-200 rounded-2xl p-4">
+                            <div class="w-9 h-9 rounded-xl bg-white text-skyDeep flex items-center justify-center text-lg mb-2 shadow-sm">🛡️</div>
+                            <h4 class="font-display font-bold text-sm text-slateInk">Bebas Ancaman Balasan</h4>
+                            <p class="text-xs text-slate-600 font-semibold mt-1">Perlindungan penuh terhadap pelapor dan saksi dari segala bentuk intimidasi (<em>anti-retaliation</em>).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid 2 Kolom: Kiri Alur 5 Langkah Interaktif, Kanan Simulasi Kotak Lapor -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                <!-- Kolom Kiri: Alur 5 Langkah Kerja TPPK -->
+                <div class="lg:col-span-6 glass-card rounded-3xl p-5 sm:p-6 space-y-4">
+                    <h3 class="font-display font-extrabold text-lg text-slateInk flex items-center gap-2">
+                        <span class="w-8 h-8 rounded-xl bg-skyBase text-skyDeep flex items-center justify-center text-base">📋</span>
+                        5 Tahap Alur Kerja Resmi TPPK
+                    </h3>
+                    <p class="text-xs text-slate-600 font-semibold">Klik setiap tahapan untuk melihat apa yang terjadi di balik layar saat laporan masuk:</p>
+
+                    <div id="tppkStepsContainer" class="space-y-2.5">
+                        <!-- Dirender via JS -->
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Simulasi Kotak Lapor Aman (Mode Latihan Edukasi) -->
+                <div class="lg:col-span-6 glass-card rounded-3xl p-5 sm:p-6 border-2 border-mintBright/60 bg-gradient-to-b from-white to-mintSoft/30 space-y-4">
+                    <div class="flex flex-wrap items-center justify-between gap-2">
+                        <span class="bg-lemonSoft text-lemonDeep text-[11px] font-extrabold px-3 py-1 rounded-full border border-lemonBright">
+                            🧪 MODE SIMULASI EDUKASI (BUKAN LAPORAN SUNGGUHAN)
+                        </span>
+                    </div>
+
+                    <div>
+                        <h3 class="font-display font-extrabold text-lg text-slateInk flex items-center gap-2">
+                            <span>📮</span> Simulasi Kotak Lapor Aman TPPK
+                        </h3>
+                        <p class="text-xs text-slate-600 font-semibold mt-1">
+                            Coba praktikkan bagaimana cara membuat laporan kejadian yang jelas, objektif, dan aman agar TPPK dapat segera memberikan bantuan.
+                        </p>
+                    </div>
+
+                    <form id="simReportForm" onsubmit="submitSimulatedReport(event)" class="space-y-3.5">
+                        <div>
+                            <label class="block text-xs font-extrabold text-slateInk mb-1">1. Peran Pelapor dalam Simulasi:</label>
+                            <div class="grid grid-cols-3 gap-2">
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="reporterRole" value="Saksi / Teman" checked class="peer sr-only">
+                                    <div class="p-2 text-center rounded-xl border border-sky-200 bg-white peer-checked:bg-skyBase peer-checked:border-skyDeep peer-checked:font-extrabold text-xs font-semibold">
+                                        👀 Saksi / Teman
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="reporterRole" value="Korban Langsung" class="peer sr-only">
+                                    <div class="p-2 text-center rounded-xl border border-sky-200 bg-white peer-checked:bg-skyBase peer-checked:border-skyDeep peer-checked:font-extrabold text-xs font-semibold">
+                                        🙋‍♂️ Mengalami Sendiri
+                                    </div>
+                                </label>
+                                <label class="cursor-pointer">
+                                    <input type="radio" name="reporterRole" value="Anonim" class="peer sr-only">
+                                    <div class="p-2 text-center rounded-xl border border-sky-200 bg-white peer-checked:bg-skyBase peer-checked:border-skyDeep peer-checked:font-extrabold text-xs font-semibold">
+                                        🕵️ Anonim Rahasia
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-extrabold text-slateInk mb-1">2. Kategori Kekerasan yang Dilaporkan:</label>
+                            <select id="simCategory" class="w-full rounded-xl border border-sky-300 bg-white px-3 py-2 text-xs sm:text-sm font-bold text-slateInk focus:outline-none focus:ring-2 focus:ring-skyAccent">
+                                <option value="Perundungan (Bullying) / Cyberbullying">Perundungan (Bullying) / Cyberbullying di Grup</option>
+                                <option value="Kekerasan Psikis / Intimidasi">Kekerasan Psikis / Intimidasi Verbal</option>
+                                <option value="Kekerasan Fisik">Kekerasan Fisik</option>
+                                <option value="Kekerasan Seksual / KBGO">Kekerasan Seksual / Pelecehan Berbasis Elektronik</option>
+                                <option value="Diskriminasi & Intoleransi">Diskriminasi & Intoleransi</option>
+                                <option value="Kebijakan Mengandung Kekerasan">Kebijakan / Aturan Kegiatan Mengandung Kekerasan</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-extrabold text-slateInk mb-1">3. Kronologi Singkat Kejadian (Contoh Latihan):</label>
+                            <textarea id="simChronology" rows="3" placeholder="Contoh: Kemarin sepulang ekskul, ada siswa baru yang fotonya diedit menjadi stiker ejekan dan disebar di grup angkatan sehingga ia malu masuk kelas..." class="w-full rounded-xl border border-sky-300 bg-white px-3 py-2 text-xs sm:text-sm font-semibold text-slateInk focus:outline-none focus:ring-2 focus:ring-skyAccent"></textarea>
+                            <button type="button" onclick="fillExampleReport()" class="text-[11px] font-extrabold text-skyDeep hover:underline mt-1">
+                                ✨ Isi otomatis contoh kronologi latihan
+                            </button>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-extrabold text-slateInk mb-1">4. Dukungan Utama yang Dibutuhkan:</label>
+                            <div class="flex flex-wrap gap-2">
+                                <label class="inline-flex items-center gap-1.5 bg-white px-2.5 py-1.5 rounded-xl border border-sky-200 text-xs font-bold cursor-pointer">
+                                    <input type="checkbox" checked class="accent-mintDeep"> Konseling Psikologis BK
+                                </label>
+                                <label class="inline-flex items-center gap-1.5 bg-white px-2.5 py-1.5 rounded-xl border border-sky-200 text-xs font-bold cursor-pointer">
+                                    <input type="checkbox" checked class="accent-mintDeep"> Penghapusan Konten Digital
+                                </label>
+                                <label class="inline-flex items-center gap-1.5 bg-white px-2.5 py-1.5 rounded-xl border border-sky-200 text-xs font-bold cursor-pointer">
+                                    <input type="checkbox" class="accent-mintDeep"> Mediasi Aman
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-interactive w-full py-3 rounded-2xl bg-gradient-to-r from-skyDeep to-mintDeep text-white font-display font-bold text-sm shadow-md flex items-center justify-center gap-2">
+                            <span>📨</span> Kirim Simulasi Laporan & Lihat Respons TPPK
+                        </button>
+                    </form>
+
+                    <!-- Hasil Simulasi Respons TPPK -->
+                    <div id="simReportResult" class="hidden bg-white border-2 border-mintDeep rounded-2xl p-4 space-y-2.5 animate-enter">
+                        <!-- Dirender via JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- MODUL 4: MISI SERTIFIKASI & KARTU IDENTITAS DIGITAL DUTA          -->
+        <!-- ================================================================= -->
+        <section id="module-sertifikasi" class="hidden space-y-6 animate-enter">
+            <div class="glass-card rounded-3xl p-5 sm:p-6 bg-gradient-to-r from-mintSoft/80 via-white to-lemonSoft/70">
+                <span class="bg-lemonSoft text-lemonDeep text-xs font-extrabold px-3 py-1 rounded-full border border-lemonBright">
+                    🏅 UJI KOMPETENSI & KARTU IDENTITAS RESMI
+                </span>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-slateInk mt-1.5">
+                    Sertifikasi Duta Anti Kekerasan MAN 2 Kota Malang
+                </h2>
+                <p class="text-sm text-slate-600 font-semibold mt-0.5">
+                    Selesaikan 5 pertanyaan studi kasus singkat dan ucapkan Ikrar Duta untuk menerbitkan <strong>Kartu Identitas Digital Duta Anti Kekerasan</strong> yang dapat kamu unduh!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                <!-- Kolom Kiri: Kuis 5 Soal + Ikrar -->
+                <div class="lg:col-span-7 glass-card rounded-3xl p-5 sm:p-6 space-y-5">
+                    <div class="flex items-center justify-between border-b border-sky-100 pb-3">
+                        <h3 class="font-display font-extrabold text-lg text-slateInk">
+                            📝 Tantangan Kasus Duta (5 Soal)
+                        </h3>
+                        <span id="quizScoreTag" class="bg-skyBase text-skyDeep text-xs font-extrabold px-3 py-1 rounded-full">
+                            Skor: 0 / 5
+                        </span>
+                    </div>
+
+                    <div id="certificationQuizList" class="space-y-4">
+                        <!-- 5 Soal dirender via JS -->
+                    </div>
+
+                    <!-- Kotak Ikrar Komitmen -->
+                    <div class="bg-gradient-to-br from-skyBase/70 to-mintSoft/70 border border-sky-300 rounded-2xl p-4 space-y-3">
+                        <h4 class="font-display font-extrabold text-sm text-slateInk flex items-center gap-2">
+                            <span>✋</span> Ikrar Duta Anti Kekerasan MAN 2 Kota Malang
+                        </h4>
+                        <p class="text-xs text-slate-700 font-semibold italic leading-relaxed bg-white/80 p-3 rounded-xl border border-sky-200">
+                            "Saya berkomitmen menjaga martabat diri dan sesama warga MAN 2 Kota Malang, menolak segala bentuk perundungan, diskriminasi, dan kekerasan baik secara langsung maupun digital, serta berani peduli dan melapor secara aman melalui TPPK."
+                        </p>
+                        <label class="flex items-start gap-2.5 cursor-pointer select-none">
+                            <input type="checkbox" id="pledgeCheckbox" onchange="updateCardPreview()" class="mt-0.5 w-4 h-4 accent-mintDeep rounded">
+                            <span class="text-xs font-extrabold text-slateInk">
+                                Saya menyetujui dan siap menjalankan Ikrar Duta Anti Kekerasan ini.
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Generator & Preview Kartu Identitas Digital PNG -->
+                <div class="lg:col-span-5 glass-card rounded-3xl p-5 sm:p-6 space-y-4 sticky top-28">
+                    <h3 class="font-display font-extrabold text-lg text-slateInk flex items-center gap-2">
+                        <span>🪪</span> Kartu Identitas Digital Duta
+                    </h3>
+
+                    <!-- Form Nama & Kelas -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-xs font-extrabold text-slateInk mb-1">Nama Lengkap Siswa:</label>
+                            <input type="text" id="studentNameInput" oninput="updateCardPreview()" placeholder="Contoh: Nabila Azzahra" maxlength="28" class="w-full rounded-xl border border-sky-300 bg-white px-3 py-2 text-xs sm:text-sm font-bold text-slateInk focus:outline-none focus:ring-2 focus:ring-skyAccent">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-extrabold text-slateInk mb-1">Kelas / Asrama:</label>
+                            <input type="text" id="studentClassInput" oninput="updateCardPreview()" placeholder="Contoh: XI-A / Ma'had" maxlength="20" class="w-full rounded-xl border border-sky-300 bg-white px-3 py-2 text-xs sm:text-sm font-bold text-slateInk focus:outline-none focus:ring-2 focus:ring-skyAccent">
+                        </div>
+                    </div>
+
+                    <!-- Status Kelayakan Cetak -->
+                    <div id="certRequirementStatus" class="bg-lemonSoft/80 border border-lemonBright rounded-2xl p-3 text-xs font-bold text-slateInk">
+                        ⚠️ Jawab minimal <strong>4 dari 5 soal</strong> dengan benar & centang <strong>Ikrar Duta</strong> untuk membuka tombol unduh kartu resmi!
+                    </div>
+
+                    <!-- HTML5 Canvas Preview Kartu Identitas Digital -->
+                    <div class="rounded-2xl overflow-hidden border-2 border-sky-300 shadow-lg bg-white">
+                        <canvas id="idCardCanvas" width="720" height="440" class="w-full h-auto block"></canvas>
+                    </div>
+
+                    <button id="downloadCardBtn" onclick="downloadIdCardPNG()" disabled class="w-full py-3.5 rounded-2xl font-display font-extrabold text-sm flex items-center justify-center gap-2 transition-all bg-slate-200 text-slate-400 cursor-not-allowed">
+                        <span>⬇️</span> Unduh Kartu Duta (PNG)
+                    </button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="mt-10 border-t border-sky-200/70 bg-white/70 py-4 px-4 text-center text-xs text-slate-600 font-semibold">
+        Program Edukasi Pencegahan & Penanganan Kekerasan di Satuan Pendidikan (PPKSP) • <strong>TPPK MAN 2 Kota Malang</strong>
+    </footer>
+
+    <!-- ===================================================================== -->
+    <!-- JAVASCRIPT: DATA KURIKULUM, VISUAL SVG, LOGIKA INTERAKTIF & CANVAS    -->
+    <!-- ===================================================================== -->
+    <script>
+        // =====================================================================
+        // 1. DATABASE 6 BENTUK KEKERASAN (PPKSP MADRASAH) + SVG ILUSTRASI ADEGAN
+        // =====================================================================
+        const SIX_FORMS_DATA = [
+            {
+                id: 'fisik',
+                num: '01',
+                title: 'Kekerasan Fisik',
+                shortTitle: 'Fisik',
+                icon: '🛑',
+                accentBg: 'bg-skyBase',
+                accentText: 'text-skyDeep',
+                badge: 'Kontak Fisik & Kontak Paksa',
+                definition: 'Perbuatan yang dilakukan oleh pelaku kepada korban dengan kontak fisik, baik menggunakan alat bantu maupun tidak, yang menimbulkan rasa sakit, luka, atau ketidaknyamanan fisik.',
+                madrasahContext: 'Contoh di lingkungan remaja MA: Mendorong bahu adik kelas dengan keras di koridor, menjewer/menampar saat latihan ekskul/kepanitiaan, memalak barang/uang jajan, atau menghukum push-up berlebihan di luar aturan.',
+                banterVsViolence: {
+                    banter: 'Tepuk bahu ringan saat menyapa teman akrab dengan persetujuan dan suasana ceria timbal balik.',
+                    violence: 'Memukul, menjegal kaki hingga jatuh, melempar barang ke arah teman, atau hukuman fisik saat kegiatan OSIS/ekstrakurikuler.'
+                },
+                psychologicalImpact: [
+                    { area: 'Emosional', desc: 'Muncul rasa takut, cemas berlebih saat melewati area tertentu di madrasah, dan trauma.' },
+                    { area: 'Akademik', desc: 'Sulit berkonsentrasi di kelas dan menghindari jam ekstrakurikuler atau masuk madrasah.' },
+                    { area: 'Sosial', desc: 'Menarik diri dari pergaulan karena merasa tidak aman secara fisik.' }
+                ],
+                sceneCaption: 'Ilustrasi: Intimidasi & dorongan fisik di koridor saat kegiatan.',
+                svgScene: `
+                <svg viewBox="0 0 420 230" class="w-full h-auto rounded-2xl bg-gradient-to-b from-sky-100 to-sky-50 border border-sky-200">
+                    <!-- Latar Koridor Madrasah -->
+                    <rect x="20" y="20" width="380" height="175" rx="14" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="2"/>
+                    <rect x="35" y="35" width="75" height="120" rx="6" fill="#E0F2FE"/>
+                    <rect x="310" y="35" width="75" height="120" rx="6" fill="#E0F2FE"/>
+                    <!-- Papan Mading -->
+                    <rect x="135" y="40" width="150" height="65" rx="8" fill="#FEF9C3" stroke="#FACC15" stroke-width="2"/>
+                    <text x="210" y="68" text-anchor="middle" font-size="11" font-weight="800" fill="#854D0E">KORIDOR KELAS</text>
+                    <text x="210" y="85" text-anchor="middle" font-size="9" font-weight="700" fill="#A16207">Zona Aman Belajar</text>
+                    <!-- Pelaku Mendorong -->
+                    <circle cx="155" cy="112" r="18" fill="#FDE68A" stroke="#0F172A" stroke-width="2.5"/>
+                    <path d="M148 109 L154 112 M162 109 L156 112" stroke="#0F172A" stroke-width="2.2" stroke-linecap="round"/>
+                    <path d="M150 120 Q155 117 160 120" stroke="#0F172A" stroke-width="2" fill="none"/>
+                    <rect x="137" y="132" width="36" height="52" rx="10" fill="#0284C7" stroke="#0F172A" stroke-width="2.5"/>
+                    <!-- Lengan Mendorong -->
+                    <path d="M173 142 L212 138" stroke="#0F172A" stroke-width="6" stroke-linecap="round"/>
+                    <!-- Efek Benturan -->
+                    <path d="M216 125 L224 132 M218 145 L226 142 M214 136 L225 136" stroke="#EF4444" stroke-width="2.5" stroke-linecap="round"/>
+                    <!-- Korban Terdorong -->
+                    <g transform="translate(12, 4) rotate(12 255 145)">
+                        <circle cx="255" cy="115" r="18" fill="#FED7AA" stroke="#0F172A" stroke-width="2.5"/>
+                        <circle cx="250" cy="113" r="2" fill="#0F172A"/>
+                        <circle cx="260" cy="113" r="2" fill="#0F172A"/>
+                        <ellipse cx="255" cy="121" rx="3.5" ry="4" fill="#0F172A"/>
+                        <rect x="237" y="135" width="36" height="50" rx="10" fill="#4ADE80" stroke="#0F172A" stroke-width="2.5"/>
+                    </g>
+                    <!-- Buku Terjatuh -->
+                    <rect x="275" y="176" width="28" height="10" rx="3" transform="rotate(-18 275 176)" fill="#FACC15" stroke="#0F172A" stroke-width="2"/>
+                    <rect x="45" y="196" width="330" height="22" rx="11" fill="#FEE2E2"/>
+                    <text x="210" y="210" text-anchor="middle" font-size="10.5" font-weight="800" fill="#B91C1C">⚠️ Kontak fisik paksa & intimidasi melanggar aturan PPKSP</text>
+                </svg>`
+            },
+            {
+                id: 'psikis',
+                num: '02',
+                title: 'Kekerasan Psikis',
+                shortTitle: 'Psikis',
+                icon: '💬',
+                accentBg: 'bg-lemonSoft',
+                accentText: 'text-lemonDeep',
+                badge: 'Verbal, Tekanan Mental & Pengucilan',
+                definition: 'Perbuatan non-fisik yang dilakukan dengan tujuan merendahkan, menghina, menakut-nakuti, atau membuat korban merasa tidak berharga dan tertekan secara emosional.',
+                madrasahContext: 'Contoh di lingkungan remaja MA: Membentak dan mempermalukan anggota panitia di depan umum, menyebarkan gosip/fitnah di asrama/kelas, mengucilkan teman dari kelompok tugas, atau memberi julukan yang menyakitkan.',
+                banterVsViolence: {
+                    banter: 'Evaluasi kinerja panitia dengan bahasa santun, objektif, dan berfokus pada solusi perbaikan.',
+                    violence: 'Meneriaki, merendahkan harga diri ("kamu memang tidak berguna"), atau mendiamkan/memboikot teman secara sengaja.'
+                },
+                psychologicalImpact: [
+                    { area: 'Emosional', desc: 'Menurunnya kepercayaan diri (self-esteem), muncul perasaan malu mendalam, sedih berkepanjangan.' },
+                    { area: 'Akademik', desc: 'Takut berpendapat saat diskusi kelas karena khawatir ditertawakan atau diremehkan.' },
+                    { area: 'Sosial', desc: 'Merasa terisolasi dan sulit mempercayai teman sebaya.' }
+                ],
+                sceneCaption: 'Ilustrasi: Tekanan verbal & pembentakan yang menjatuhkan mental.',
+                svgScene: `
+                <svg viewBox="0 0 420 230" class="w-full h-auto rounded-2xl bg-gradient-to-b from-amber-50 to-sky-50 border border-amber-200">
+                    <rect x="20" y="20" width="380" height="175" rx="14" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+                    <!-- Balon Kata Kasar -->
+                    <path d="M55 42 H215 A14 14 0 0 1 229 56 V84 A14 14 0 0 1 215 98 H130 L112 114 L115 98 H55 A14 14 0 0 1 41 84 V56 A14 14 0 0 1 55 42 Z" fill="#FEF08A" stroke="#CA8A04" stroke-width="2.5"/>
+                    <text x="135" y="67" text-anchor="middle" font-size="11" font-weight="800" fill="#854D0E">"Kerjamu lambat banget!</text>
+                    <text x="135" y="83" text-anchor="middle" font-size="11" font-weight="800" fill="#854D0E">Gak cocok jadi panitia!"</text>
+                    <!-- Pelaku Membentak -->
+                    <circle cx="110" cy="134" r="18" fill="#FDE68A" stroke="#0F172A" stroke-width="2.5"/>
+                    <path d="M103 130 L108 133 M117 130 L112 133" stroke="#0F172A" stroke-width="2.2" stroke-linecap="round"/>
+                    <ellipse cx="110" cy="142" rx="5" ry="4" fill="#EF4444" stroke="#0F172A" stroke-width="1.5"/>
+                    <rect x="92" y="154" width="36" height="36" rx="10" fill="#38BDF8" stroke="#0F172A" stroke-width="2.5"/>
+                    <!-- Korban Tertunduk Sedih -->
+                    <circle cx="290" cy="140" r="18" fill="#FED7AA" stroke="#0F172A" stroke-width="2.5"/>
+                    <path d="M283 138 Q286 141 289 138 M292 138 Q295 141 298 138" stroke="#0F172A" stroke-width="2" fill="none"/>
+                    <path d="M285 148 Q290 144 295 148" stroke="#0F172A" stroke-width="2" fill="none"/>
+                    <!-- Awan Mendung Kecil di Atas Korban -->
+                    <path d="M268 96 Q275 84 288 88 Q298 80 310 90 Q320 94 314 104 H268 Z" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/>
+                    <rect x="272" y="160" width="36" height="30" rx="10" fill="#A7F3D0" stroke="#0F172A" stroke-width="2.5"/>
+                    <rect x="45" y="196" width="330" height="22" rx="11" fill="#FEF3C7"/>
+                    <text x="210" y="210" text-anchor="middle" font-size="10.5" font-weight="800" fill="#92400E">⚠️ Luka psikis tidak terlihat mata, namun berdampak panjang</text>
+                </svg>`
+            },
+            {
+                id: 'perundungan',
+                num: '03',
+                title: 'Perundungan (Bullying)',
+                shortTitle: 'Bullying',
+                icon: '📱',
+                accentBg: 'bg-mintSoft',
+                accentText: 'text-mintDeep',
+                badge: 'Berulang + Relasi Kuasa Tidak Seimbang',
+                definition: 'Kekerasan fisik, psikis, atau digital (cyberbullying) yang dilakukan secara BERULANG oleh seseorang atau sekelompok orang yang memiliki kuasa lebih (senioritas, popularitas, mayoritas) terhadap korban yang sulit membela diri.',
+                madrasahContext: 'Contoh di lingkungan remaja MA: Membuat stiker WhatsApp dari foto candid teman yang memalukan lalu mengirimnya berulang kali di grup angkatan, atau memalak dan mengejek siswa pindahan setiap hari.',
+                banterVsViolence: {
+                    banter: 'Saling melontarkan humor setara antar teman dekat yang keduanya ikut tertawa dan berhenti jika salah satu tidak nyaman.',
+                    violence: 'Terjadi berulang kali, menargetkan satu orang secara terus-menerus, dan disebarkan ke ruang publik/grup chat.'
+                },
+                psychologicalImpact: [
+                    { area: 'Emosional', desc: 'Stres berat, gangguan tidur, merasa tidak berdaya karena serangan datang terus-menerus.' },
+                    { area: 'Akademik', desc: 'Penurunan nilai drastis dan kehilangan motivasi berprestasi.' },
+                    { area: 'Sosial', desc: 'Jejak digital membuat korban merasa dipermalukan di mana saja dan kapan saja.' }
+                ],
+                sceneCaption: 'Ilustrasi: Cyberbullying dengan menyebar stiker ejekan di grup chat.',
+                svgScene: `
+                <svg viewBox="0 0 420 230" class="w-full h-auto rounded-2xl bg-gradient-to-b from-emerald-50 to-sky-50 border border-emerald-200">
+                    <rect x="20" y="20" width="380" height="175" rx="14" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="2"/>
+                    <!-- Layar Smartphone Grup Chat -->
+                    <rect x="130" y="28" width="160" height="160" rx="18" fill="#F8FAFC" stroke="#0F172A" stroke-width="3"/>
+                    <rect x="133" y="31" width="154" height="24" rx="12" fill="#0284C7"/>
+                    <text x="210" y="46" text-anchor="middle" font-size="9.5" font-weight="800" fill="#FFFFFF">Grup Angkatan (142 Anggota)</text>
+                    <!-- Bubble Chat Stiker Ejekan -->
+                    <rect x="144" y="64" width="98" height="44" rx="10" fill="#FEF08A" stroke="#CA8A04" stroke-width="1.5"/>
+                    <text x="193" y="82" text-anchor="middle" font-size="9" font-weight="800" fill="#854D0E">[Stiker Foto Editan]</text>
+                    <text x="193" y="96" text-anchor="middle" font-size="9" font-weight="700" fill="#A16207">"Wkwk mirip banget 😂"</text>
+                    <rect x="176" y="114" width="102" height="26" rx="10" fill="#E0F2FE" stroke="#38BDF8" stroke-width="1.5"/>
+                    <text x="227" y="130" text-anchor="middle" font-size="9" font-weight="800" fill="#0369A1">"Share ke grup sebelah!"</text>
+                    <rect x="144" y="146" width="84" height="26" rx="10" fill="#FEE2E2" stroke="#F87171" stroke-width="1.5"/>
+                    <text x="186" y="162" text-anchor="middle" font-size="9" font-weight="800" fill="#B91C1C">"Hahaha cupu!"</text>
+                    <!-- Reaksi Sedih di Samping HP -->
+                    <circle cx="72" cy="118" r="22" fill="#FED7AA" stroke="#0F172A" stroke-width="2.5"/>
+                    <path d="M64 115 Q68 119 71 115 M74 115 Q78 119 81 115" stroke="#0F172A" stroke-width="2" fill="none"/>
+                    <path d="M66 127 Q72 122 78 127" stroke="#0F172A" stroke-width="2" fill="none"/>
+                    <path d="M63 121 L61 128" stroke="#38BDF8" stroke-width="2.5" stroke-linecap="round"/>
+                    <rect x="45" y="196" width="330" height="22" rx="11" fill="#DCFCE7"/>
+                    <text x="210" y="210" text-anchor="middle" font-size="10.5" font-weight="800" fill="#166534">⚠️ Tiga ciri bullying: Disengaja, Berulang, & Ketimpangan Kuasa</text>
+                </svg>`
+            },
+            {
+                id: 'seksual',
+                num: '04',
+                title: 'Kekerasan Seksual & KBGO',
+                shortTitle: 'Seksual / KBGO',
+                icon: '🛡️',
+                accentBg: 'bg-skyBase',
+                accentText: 'text-skyDeep',
+                badge: 'Termasuk Kekerasan Berbasis Gender Online',
+                definition: 'Setiap perbuatan merendahkan, menghina, melecehkan, dan/atau menyerang tubuh atau fungsi reproduksi seseorang secara langsung maupun berbasis elektronik (KBGO), tanpa persetujuan yang sah.',
+                madrasahContext: 'Contoh di lingkungan remaja MA: Komentar bernuansa seksual terhadap tubuh/penampilan teman (catcalling), mengirim pesan/foto tidak senonoh (DM/chat), atau menyebarkan foto/video pribadi teman tanpa izin.',
+                banterVsViolence: {
+                    banter: 'Memuji prestasi atau kerapian seragam teman secara sopan dan menghormati batasan pribadi (personal boundaries).',
+                    violence: 'Siulan menggoda, komentar mengenai bentuk tubuh, sentuhan tanpa izin, atau menyebarkan tangkapan layar foto pribadi.'
+                },
+                psychologicalImpact: [
+                    { area: 'Emosional', desc: 'Trauma mendalam, rasa takut disalahkan (victim blaming), dan kecemasan berat.' },
+                    { area: 'Akademik', desc: 'Kehilangan fokus belajar dan keinginan menarik diri dari lingkungan sekolah.' },
+                    { area: 'Sosial', desc: 'Stigma sosial yang keliru sering membuat korban takut melapor; TPPK wajib melindungi penuh!' }
+                ],
+                sceneCaption: 'Ilustrasi: Perlindungan privasi digital & penolakan pelecehan berbasis elektronik.',
+                svgScene: `
+                <svg viewBox="0 0 420 230" class="w-full h-auto rounded-2xl bg-gradient-to-b from-sky-100 to-emerald-50 border border-sky-200">
+                    <rect x="20" y="20" width="380" height="175" rx="14" fill="#FFFFFF" stroke="#BAE6FD" stroke-width="2"/>
+                    <!-- Perisai Perlindungan Privasi di Tengah -->
+                    <path d="M210 38 L150 62 V112 C150 150 176 176 210 185 C244 176 270 150 270 112 V62 L210 38 Z" fill="#E0F2FE" stroke="#0284C7" stroke-width="3.5" stroke-linejoin="round"/>
+                    <!-- Gembok Aman di dalam Perisai -->
+                    <rect x="190" y="102" width="40" height="32" rx="7" fill="#FACC15" stroke="#0F172A" stroke-width="2.5"/>
+                    <path d="M198 102 V92 A12 12 0 0 1 222 92 V102" fill="none" stroke="#0F172A" stroke-width="3"/>
+                    <circle cx="210" cy="116" r="3.5" fill="#0F172A"/>
+                    <!-- Pesan Berbahaya Diblokir di Kiri -->
+                    <rect x="42" y="75" width="90" height="48" rx="10" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+                    <text x="87" y="96" text-anchor="middle" font-size="9.5" font-weight="800" fill="#B91C1C">Pesan / Foto</text>
+                    <text x="87" y="110" text-anchor="middle" font-size="9.5" font-weight="800" fill="#B91C1C">Tanpa Izin 🚫</text>
+                    <!-- Dukungan TPPK di Kanan -->
+                    <rect x="288" y="75" width="92" height="48" rx="10" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+                    <text x="334" y="96" text-anchor="middle" font-size="9.5" font-weight="800" fill="#166534">Privasi &amp;</text>
+                    <text x="334" y="110" text-anchor="middle" font-size="9.5" font-weight="800" fill="#166534">Martabat Aman</text>
+                    <rect x="45" y="196" width="330" height="22" rx="11" fill="#E0F2FE"/>
+                    <text x="210" y="210" text-anchor="middle" font-size="10.5" font-weight="800" fill="#0369A1">🛡️ Tanpa persetujuan = Pelanggaran. Korban dilindungi penuh TPPK!</text>
+                </svg>`
+            },
+            {
+                id: 'diskriminasi',
+                num: '05',
+                title: 'Diskriminasi & Intoleransi',
+                shortTitle: 'Diskriminasi',
+                icon: '🌍',
+                accentBg: 'bg-mintSoft',
+                accentText: 'text-mintDeep',
+                badge: 'Pembedaan Suku, Daerah, Bahasa & Kondisi',
+                definition: 'Setiap perbuatan pembedaan, pengecualian, pembatasan, atau pemilihan berdasarkan suku, ras, asal daerah, logat bahasa, status ekonomi, maupun kondisi disabilitas yang menghambat hak siswa.',
+                madrasahContext: 'Contoh di lingkungan remaja MA (yang siswanya berasal dari berbagai daerah di Indonesia): Mengejek logat bahasa daerah teman dari luar Malang, menolak satu kelompok tugas karena perbedaan latar belakang, atau merendahkan kondisi fisik/disabilitas.',
+                banterVsViolence: {
+                    banter: 'Bertanya dengan antusias dan saling belajar keunikan budaya/bahasa daerah teman dengan rasa hormat.',
+                    violence: 'Menirukan logat bicara teman untuk ditertawakan bersama atau menyingkirkannya dari kepanitiaan/kelompok.'
+                },
+                psychologicalImpact: [
+                    { area: 'Emosional', desc: 'Merasa terasing di lingkungan baru (homesick & alienation) dan malu terhadap identitas dirinya.' },
+                    { area: 'Akademik', desc: 'Enggan berkolaborasi dalam proyek kelompok atau organisasi madrasah.' },
+                    { area: 'Sosial', desc: 'Terbentuknya kelompok-kelompok eksklusif (geng) yang merusak ukhuwah/persaudaraan madrasah.' }
+                ],
+                sceneCaption: 'Ilustrasi: Menghargai keberagaman asal daerah & logat di lingkungan madrasah.',
+                svgScene: `
+                <svg viewBox="0 0 420 230" class="w-full h-auto rounded-2xl bg-gradient-to-b from-mintSoft/70 to-sky-50 border border-emerald-200">
+                    <rect x="20" y="20" width="380" height="175" rx="14" fill="#FFFFFF" stroke="#A7F3D0" stroke-width="2"/>
+                    <!-- Tiga Siswa dari Beragam Daerah Bergandengan -->
+                    <circle cx="130" cy="96" r="18" fill="#FDE68A" stroke="#0F172A" stroke-width="2.5"/>
+                    <path d="M124 98 Q130 104 136 98" stroke="#0F172A" stroke-width="2" fill="none"/>
+                    <rect x="112" y="116" width="36" height="50" rx="10" fill="#38BDF8" stroke="#0F172A" stroke-width="2.5"/>
+                    <text x="130" y="180" text-anchor="middle" font-size="9" font-weight="800" fill="#0369A1">Malang</text>
+
+                    <circle cx="210" cy="96" r="18" fill="#FED7AA" stroke="#0F172A" stroke-width="2.5"/>
+                    <path d="M204 98 Q210 104 216 98" stroke="#0F172A" stroke-width="2" fill="none"/>
+                    <rect x="192" y="116" width="36" height="50" rx="10" fill="#4ADE80" stroke="#0F172A" stroke-width="2.5"/>
+                    <text x="210" y="180" text-anchor="middle" font-size="9" font-weight="800" fill="#166534">Kalimantan</text>
+
+                    <circle cx="290" cy="96" r="18" fill="#FDBA74" stroke="#0F172A" stroke-width="2.5"/>
+                    <path d="M284 98 Q290 104 296 98" stroke="#0F172A" stroke-width="2" fill="none"/>
+                    <rect x="272" y="116" width="36" height="50" rx="10" fill="#FACC15" stroke="#0F172A" stroke-width="2.5"/>
+                    <text x="290" y="180" text-anchor="middle" font-size="9" font-weight="800" fill="#854D0E">Sumatera</text>
+
+                    <!-- Spanduk Persatuan di Atas -->
+                    <rect x="85" y="34" width="250" height="28" rx="14" fill="#FEF08A" stroke="#CA8A04" stroke-width="2"/>
+                    <text x="210" y="52" text-anchor="middle" font-size="10.5" font-weight="800" fill="#854D0E">✨ Setara dalam Keberagaman Madrasah ✨</text>
+
+                    <rect x="45" y="196" width="330" height="22" rx="11" fill="#DCFCE7"/>
+                    <text x="210" y="210" text-anchor="middle" font-size="10.5" font-weight="800" fill="#166534">🌍 Perbedaan daerah & logat adalah kekayaan, bukan bahan ejekan!</text>
+                </svg>`
+            },
+            {
+                id: 'kebijakan',
+                num: '06',
+                title: 'Kebijakan Mengandung Kekerasan',
+                shortTitle: 'Kebijakan Keras',
+                icon: '📜',
+                accentBg: 'bg-lemonSoft',
+                accentText: 'text-lemonDeep',
+                badge: 'Aturan Kegiatan / Tata Tertib Tidak Edukatif',
+                definition: 'Kebijakan, aturan tertulis maupun tidak tertulis (tradisi kegiatan), yang berpotensi menimbulkan kekerasan fisik, psikis, atau merendahkan martabat peserta didik.',
+                madrasahContext: 'Contoh di lingkungan remaja MA: Aturan "peloncoan" tidak resmi dalam masa orientasi ekstrakurikuler yang mewajibkan tugas mempermalukan diri di depan umum, atau sanksi denda/fisik yang tidak disetujui pembina & madrasah.',
+                banterVsViolence: {
+                    banter: 'Tata tertib kegiatan yang disusun bersama pembina untuk melatih kedisiplinan, kepemimpinan, dan tanggung jawab secara bermartabat.',
+                    violence: 'Aturan buatan panitia senior ("pasal karet") yang bertujuan mencari-cari kesalahan adik kelas untuk dibentak atau dipermalukan.'
+                },
+                psychologicalImpact: [
+                    { area: 'Emosional', desc: 'Menimbulkan ketakutan kolektif dan menormalisasi budaya balas dendam antar angkatan.' },
+                    { area: 'Akademik', desc: 'Mengganggu jam istirahat dan persiapan belajar siswa karena tugas kegiatan yang tidak masuk akal.' },
+                    { area: 'Sosial', desc: 'Menciptakan jarak senior-junior yang kaku dan tidak sehat di organisasi.' }
+                ],
+                sceneCaption: 'Ilustrasi: Mengganti budaya peloncoan dengan pembinaan yang edukatif.',
+                svgScene: `
+                <svg viewBox="0 0 420 230" class="w-full h-auto rounded-2xl bg-gradient-to-b from-amber-50 to-sky-50 border border-amber-200">
+                    <rect x="20" y="20" width="380" height="175" rx="14" fill="#FFFFFF" stroke="#FDE68A" stroke-width="2"/>
+                    <!-- Kartu Aturan Lama (Dicoret) -->
+                    <rect x="44" y="46" width="142" height="122" rx="12" fill="#FEE2E2" stroke="#EF4444" stroke-width="2"/>
+                    <text x="115" y="70" text-anchor="middle" font-size="10" font-weight="800" fill="#B91C1C">ATURAN TIDAK RESMI ❌</text>
+                    <text x="115" y="92" text-anchor="middle" font-size="9" font-weight="700" fill="#7F1D1D">• Bentak di lapangan</text>
+                    <text x="115" y="110" text-anchor="middle" font-size="9" font-weight="700" fill="#7F1D1D">• Atribut memalukan</text>
+                    <text x="115" y="128" text-anchor="middle" font-size="9" font-weight="700" fill="#7F1D1D">• Hukuman fisik</text>
+                    <line x1="54" y1="150" x2="176" y2="62" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+
+                    <!-- Panah Transformasi -->
+                    <path d="M196 107 H222 L215 100 M222 107 L215 114" stroke="#0284C7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+
+                    <!-- Kartu Pembinaan Edukatif -->
+                    <rect x="234" y="46" width="142" height="122" rx="12" fill="#DCFCE7" stroke="#16A34A" stroke-width="2"/>
+                    <text x="305" y="70" text-anchor="middle" font-size="10" font-weight="800" fill="#166534">ATURAN EDUKATIF ✅</text>
+                    <text x="305" y="92" text-anchor="middle" font-size="9" font-weight="700" fill="#14532D">• Mentoring kakak-adik</text>
+                    <text x="305" y="110" text-anchor="middle" font-size="9" font-weight="700" fill="#14532D">• Disiplin bermartabat</text>
+                    <text x="305" y="128" text-anchor="middle" font-size="9" font-weight="700" fill="#14532D">• Diawasi Pembina</text>
+
+                    <rect x="45" y="196" width="330" height="22" rx="11" fill="#FEF3C7"/>
+                    <text x="210" y="210" text-anchor="middle" font-size="10.5" font-weight="800" fill="#92400E">📜 Setiap aturan kegiatan siswa wajib ramah anak & disetujui Madrasah</text>
+                </svg>`
+            }
+        ];
+
+        // =====================================================================
+        // 2. DATABASE 4 SKENARIO SIMULASI KEPUTUSAN (ACTIVE BYSTANDER)
+        // =====================================================================
+        const SCENARIOS_DATA = [
+            {
+                id: 'scen1',
+                tag: 'KASUS 01 • KEPANITIAAN OSIS/MPK',
+                title: 'Tekanan Senioritas di Rapat Kegiatan',
+                location: 'Aula & Ruang Rapat Organisasi MAN 2 Kota Malang',
+                character: 'Raka (Ketua Divisi) & Aisyah (Anggota Kelas X)',
+                story: 'Saat gladi bersih acara madrasah, perlengkapan dekorasi sedikit terlambat tiba. Raka (kelas XI) langsung membentak Aisyah (kelas X) di depan puluhan panitia lain dengan kata-kata kasar: <em>"Kerja gini aja gak becus, bikin malu angkatan aja!"</em> Aisyah tampak menahan tangis dan gemetar. Kamu berada di sebelah mereka.',
+                options: [
+                    {
+                        text: 'Ikut diam saja dan pura-pura sibuk mengecek ponsel karena takut ikut dimarahi oleh Raka.',
+                        isOptimal: false,
+                        points: 5,
+                        badge: 'Pasif (Passive Bystander)',
+                        feedbackTitle: 'Sikap diam sering dianggap sebagai persetujuan oleh pelaku.',
+                        feedbackBody: 'Wajar jika kamu merasa sungkan dengan kakak kelas, namun membiarkan pembentakan di depan umum membuat korban merasa sendirian. Kamu tidak harus melawan dengan emosi—kamu bisa menenangkan korban atau mengajak panitia inti menengahi dengan tenang.'
+                    },
+                    {
+                        text: 'Mendekati Aisyah dengan tenang, membantunya mengambil alih situasi sejenak, lalu mengingatkan Raka secara pribadi agar evaluasi disampaikan tanpa membentak di depan umum.',
+                        isOptimal: true,
+                        points: 25,
+                        badge: 'Duta Empati & Asertif ⭐',
+                        feedbackTitle: 'Tindakan Active Bystander yang sangat tepat dan dewasa!',
+                        feedbackBody: 'Secara psikologis, mendampingi korban segera menurunkan tingkat stres akutnya (<em>emotional first aid</em>). Mengingatkan rekan/senior secara asertif dan tidak mempermalukannya balik menjaga kondusivitas organisasi sekaligus menghentikan kekerasan psikis.'
+                    },
+                    {
+                        text: 'Membalas membentak Raka di depan semua orang agar dia merasakan malu yang sama seperti Aisyah.',
+                        isOptimal: false,
+                        points: 10,
+                        badge: 'Konfrontasi Agresif',
+                        feedbackTitle: 'Niat membela benar, namun caranya memicu eskalasi konflik.',
+                        feedbackBody: 'Membalas kekerasan verbal dengan bentakan baru justru mengubah situasi menjadi pertengkaran terbuka dan membuat Aisyah semakin tertekan menjadi pusat perhatian. Gunakan komunikasi asertif atau laporkan ke Pembina/TPPK jika berulang.'
+                    }
+                ]
+            },
+            {
+                id: 'scen2',
+                tag: 'KASUS 02 • RUANG DIGITAL & GRUP WA',
+                title: 'Stiker Foto Editan di Grup Angkatan',
+                location: 'Grup WhatsApp Siswa (150+ Anggota)',
+                character: 'Bagas (Pengirim Stiker) & Dimas (Korban)',
+                story: 'Seseorang mengambil foto Dimas saat tertidur kelelahan di kelas, mengeditnya dengan tulisan mengejek, lalu menjadikannya stiker WhatsApp. Dalam 10 menit, 6 orang teman mengirim ulang stiker itu bertubi-tubi disertai tawa. Dimas langsung keluar (<em>left</em>) dari grup kelas.',
+                options: [
+                    {
+                        text: 'Menyimpan stiker itu untuk koleksi pribadi tapi tidak ikut mengirimkannya di grup.',
+                        isOptimal: false,
+                        points: 5,
+                        badge: 'Kurang Empati Digital',
+                        feedbackTitle: 'Menyimpan konten perundungan tetap berisiko menyebarkannya kembali.',
+                        feedbackBody: 'Menurut aturan PPKSP, penyebaran konten yang merendahkan martabat teman termasuk perundungan siber (cyberbullying). Menghapus stiker tersebut dan mendukung korban adalah langkah pertama seorang Duta.'
+                    },
+                    {
+                        text: 'Menulis pesan sopan di grup agar berhenti menyebar stiker tersebut, menghubungi Dimas lewat chat pribadi untuk memberi dukungan, serta menyimpan bukti tangkapan layar untuk dilaporkan ke Guru BK/TPPK jika berlanjut.',
+                        isOptimal: true,
+                        points: 25,
+                        badge: 'Pelindung Ruang Digital ⭐',
+                        feedbackTitle: 'Luar biasa! Kamu memutus rantai cyberbullying secara efektif.',
+                        feedbackBody: 'Intervensi cepat di grup menghentikan efek ikut-ikutan (<em>bandwagon effect</em>). Menghubungi Dimas secara pribadi memulihkan rasa amannya, dan menyimpan bukti (screenshot) sangat membantu TPPK menindaklanjuti kasus secara objektif.'
+                    },
+                    {
+                        text: 'Menasihati Dimas agar "jangan baperan, anak SMA/MA memang biasa bercanda seperti itu".',
+                        isOptimal: false,
+                        points: 5,
+                        badge: 'Meremehkan Dampak Korban',
+                        feedbackTitle: 'Hati-hati! Kalimat "jangan baper" sering memvalidasi pelaku perundungan.',
+                        feedbackBody: 'Setiap orang memiliki batas kenyamanan berbeda. Ketika korban sampai keluar dari grup karena dipermalukan di hadapan ratusan teman, itu bukan lagi candaan, melainkan kekerasan psikis digital.'
+                    }
+                ]
+            },
+            {
+                id: 'scen3',
+                tag: 'KASUS 03 • INKLUSIVITAS & PERTEMANAN',
+                title: 'Ejekan Logat Daerah Siswa Pindahan',
+                location: 'Kantin & Area Ma\'had MAN 2 Kota Malang',
+                character: 'Tari (Siswa Pindahan Luar Pulau) & Sekelompok Teman',
+                story: 'Tari baru pindah dari luar Pulau Jawa dan memiliki logat bicara daerah yang khas. Saat presentasi kelompok, beberapa siswa di bangku belakang menirukan logat bicaranya sambil tertawa kecil sehingga Tari terbata-bata dan menolak melanjutkan presentasi.',
+                options: [
+                    {
+                        text: 'Menunjukkan gestur mendukung (anggukan & senyum), mengajak teman sebangku berhenti menirukan logat, lalu mengapresiasi isi materi presentasi Tari setelah selesai.',
+                        isOptimal: true,
+                        points: 25,
+                        badge: 'Duta Inklusivitas ⭐',
+                        feedbackTitle: 'Tepat sekali! Kamu menciptakan ruang belajar yang aman dan inklusif.',
+                        feedbackBody: 'Mengejek logat atau asal daerah termasuk bentuk Diskriminasi & Intoleransi dalam Permendikbudristek 46/2023. Dukungan positif dari teman sebaya membantu Tari merasa diterima sebagai bagian keluarga besar MAN 2 Kota Malang.'
+                    },
+                    {
+                        text: 'Ikut tersenyum kecil karena menganggap logat tersebut memang terdengar unik dan lucu.',
+                        isOptimal: false,
+                        points: 5,
+                        badge: 'Ikut Menertawakan',
+                        feedbackTitle: 'Tertawa saat teman dipermalukan memperkuat rasa terasing korban.',
+                        feedbackBody: 'Bagi siswa perantau atau pindahan, penerimaan teman sebaya adalah faktor utama kesehatan mental. Mari bedakan antara kagum pada keragaman budaya dengan menertawakan perbedaan.'
+                    },
+                    {
+                        text: 'Menyarankan Tari agar tidak usah bicara dulu saat presentasi berikutnya supaya tidak ditertawakan.',
+                        isOptimal: false,
+                        points: 10,
+                        badge: 'Membatasi Hak Korban',
+                        feedbackTitle: 'Solusi ini justru membatasi hak Tari untuk berkembang dan berpartisipasi.',
+                        feedbackBody: 'Yang perlu diubah adalah perilaku teman yang mengejek, bukan membatasi hak korban untuk tampil dan berekspresi di kelas.'
+                    }
+                ]
+            },
+            {
+                id: 'scen4',
+                tag: 'KASUS 04 • PENDAMPINGAN TEMAN CURHAT',
+                title: 'Teman Takut Melapor ke TPPK',
+                location: 'Perpustakaan Madrasah',
+                character: 'Nadia (Sahabatmu)',
+                story: 'Nadia bercerita sambil menangis bahwa ia sering menerima pesan bernada pelecehan dan ancaman penyebaran foto dari sebuah akun anonim. Ia memintamu berjanji untuk tidak memberi tahu siapa pun, termasuk Guru BK atau TPPK, karena takut disalahkan dan malu.',
+                options: [
+                    {
+                        text: 'Memaksa Nadia langsung menghadap ke ruang guru hari itu juga tanpa persetujuannya.',
+                        isOptimal: false,
+                        points: 10,
+                        badge: 'Kurang Memahami Kesiapan Korban',
+                        feedbackTitle: 'Memaksa korban secara tiba-tiba dapat menambah rasa panik dan kehilangan kendali.',
+                        feedbackBody: 'Dalam psikologi pendampingan remaja, korban kekerasan sering merasa kehilangan kontrol atas dirinya. Bangun rasa aman terlebih dahulu dan jelaskan bahwa TPPK menjamin kerahasiaan identitasnya.'
+                    },
+                    {
+                        text: 'Mendengarkan tanpa menghakimi, meyakinkan bahwa ini BUKAN salahnya, menjelaskan bahwa TPPK MAN 2 Kota Malang menjamin kerahasiaan identitas, lalu menawarkan diri menemani Nadia melapor ke Guru BK/TPPK.',
+                        isOptimal: true,
+                        points: 25,
+                        badge: 'Sahabat Pemulihan TPPK ⭐',
+                        feedbackTitle: 'Respons terbaik seorang Duta Anti Kekerasan!',
+                        feedbackBody: 'Kamu menerapkan 3 langkah kunci pertolongan pertama psikologis: (1) Validasi & anti-victim blaming ("ini bukan salahmu"), (2) Edukasi hak perlindungan & kerahasiaan TPPK, serta (3) Pendampingan (<em>accompaniment</em>) agar korban tidak merasa sendirian.'
+                    },
+                    {
+                        text: 'Menceritakan masalah Nadia ke grup teman dekatmu untuk meminta pendapat mereka.',
+                        isOptimal: false,
+                        points: 0,
+                        badge: 'Melanggar Privasi Korban',
+                        feedbackTitle: 'Jangan pernah menyebarkan cerita pribadi korban ke orang lain!',
+                        feedbackBody: 'Membagikan cerita korban ke grup teman justru memperluas penyebaran rumor dan melanggar prinsip kerahasiaan. Informasi hanya boleh disampaikan kepada pihak berwenang yang terikat kode etik kerahasiaan seperti Guru BK dan TPPK.'
+                    }
+                ]
+            }
+        ];
+
+        // =====================================================================
+        // 3. DATABASE 5 ALUR KERJA RESMI TPPK & 5 SOAL SERTIFIKASI
+        // =====================================================================
+        const TPPK_FLOW_STEPS = [
+            {
+                step: '1',
+                title: 'Pelaporan Aman & Rahasia',
+                time: 'Langkah Awal',
+                desc: 'Korban, saksi, atau orang tua melaporkan kejadian melalui kanal resmi TPPK MAN 2 Kota Malang (kotak aduan, Guru BK, wali kelas, atau tautan laporan rahasia). Identitas pelapor langsung dikodekan agar terlindungi.'
+            },
+            {
+                step: '2',
+                title: 'Penerimaan & Asesmen Keamanan Awal',
+                time: 'Maksimal 1×24 Jam',
+                desc: 'Tim TPPK memverifikasi laporan dan memastikan keselamatan fisik maupun psikis korban terlebih dahulu, termasuk menghentikan potensi ancaman berlanjut.'
+            },
+            {
+                step: '3',
+                title: 'Pendampingan Psikologis & Pemeriksaan Adil',
+                time: 'Tahap Pemulihan & Klarifikasi',
+                desc: 'Guru BK / konselor memberikan pendampingan psikologis bagi korban. Pemeriksaan fakta dilakukan secara terpisah (tidak mempertemukan korban dan pelaku secara paksa) untuk mencegah trauma.'
+            },
+            {
+                step: '4',
+                title: 'Rekomendasi Pemulihan & Pembinaan Edukatif',
+                time: 'Keputusan Berkeadilan',
+                desc: 'TPPK menyusun rekomendasi pemulihan hak belajar korban serta sanksi pembinaan edukatif bagi pelaku sesuai ketentuan PPKSP Kementerian Agama.'
+            },
+            {
+                step: '5',
+                title: 'Pemantauan Pasca-Penanganan (Anti-Retaliation)',
+                time: 'Berkelanjutan',
+                desc: 'TPPK memantau kondisi psikologis dan sosial korban di kelas/ma\'had untuk memastikan tidak ada balas dendam atau pengucilan lanjutan.'
+            }
+        ];
+
+        const CERT_QUIZ_DATA = [
+            {
+                q: '1. Menurut Permendikbudristek No. 46 Tahun 2023 tentang PPKSP, manakah yang termasuk dalam 6 bentuk kekerasan di satuan pendidikan?',
+                opts: [
+                    'Kekerasan fisik, psikis, perundungan, kekerasan seksual, diskriminasi/intoleransi, dan kebijakan yang mengandung kekerasan',
+                    'Hanya perkelahian fisik yang menimbulkan luka berat di lingkungan madrasah',
+                    'Perbedaan pendapat saat diskusi organisasi OSIS/MPK'
+                ],
+                ans: 0
+            },
+            {
+                q: '2. Apa perbedaan utama antara candaan biasa dengan perundungan (bullying)?',
+                opts: [
+                    'Perundungan hanya terjadi di luar jam pelajaran',
+                    'Perundungan melibatkan ketimpangan relasi kuasa, dilakukan berulang, dan menyakiti/merendahkan korban',
+                    'Candaan selalu menggunakan media sosial sedangkan perundungan secara langsung'
+                ],
+                ans: 1
+            },
+            {
+                q: '3. Jika seorang teman bercerita mengalami kekerasan berbasis elektronik (KBGO) namun takut identitasnya tersebar, prinsip TPPK apa yang dapat kamu jelaskan kepadanya?',
+                opts: [
+                    'Identitas korban akan diumumkan di papan pengumuman agar pelaku jera',
+                    'TPPK menjamin kerahasiaan identitas pelapor/korban, pendampingan psikologis, dan perlindungan dari ancaman balasan',
+                    'Korban harus menyelesaikan masalahnya sendiri tanpa melibatkan guru'
+                ],
+                ans: 1
+            },
+            {
+                q: '4. Mengapa aturan kegiatan kepanitiaan siswa yang mewajibkan hukuman mempermalukan adik kelas dilarang?',
+                opts: [
+                    'Karena termasuk "Kebijakan yang Mengandung Kekerasan" dan merendahkan martabat peserta didik',
+                    'Karena memakan waktu istirahat panitia saja',
+                    'Boleh dilakukan asalkan tidak direkam kamera'
+                ],
+                ans: 0
+            },
+            {
+                q: '5. Sebagai Duta Anti Kekerasan MAN 2 Kota Malang, langkah paling tepat saat melihat stiker ejekan tentang teman disebar di grup chat adalah...',
+                opts: [
+                    'Ikut tertawa agar dianggap kompak oleh teman sekelas',
+                    'Mengingatkan dengan santun untuk menghentikan penyebaran, mendukung korban secara pribadi, dan menyimpan bukti jika perlu dilaporkan ke TPPK',
+                    'Menyebarkannya ke grup kelas lain untuk meminta pendapat'
+                ],
+                ans: 1
+            }
+        ];
+
+        // =====================================================================
+        // 4. STATE APLIKASI & AUDIO LEMBUT (WEB AUDIO API)
+        // =====================================================================
+        let appState = {
+            activeModule: 'peta',
+            activeFormId: 'fisik',
+            exploredForms: { fisik: true },
+            activeScenarioIdx: 0,
+            scenarioAnswers: {}, // { scenId: optionIdx }
+            activeTppkStep: 0,
+            quizAnswers: {}, // { qIdx: optIdx }
+            empathyPoints: 10, // Poin awal dari membuka kartu pertama
+            soundOn: true
+        };
+
+        let audioCtx = null;
+        function playChime(type = 'soft') {
+            if (!appState.soundOn) return;
+            try {
+                if (!audioCtx) {
+                    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+                }
+                if (audioCtx.state === 'suspended') audioCtx.resume();
+
+                const now = audioCtx.currentTime;
+                const osc = audioCtx.createOscillator();
+                const gain = audioCtx.createGain();
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+
+                if (type === 'soft') {
+                    osc.type = 'sine';
+                    osc.frequency.setValueAtTime(523.25, now); // C5
+                    osc.frequency.exponentialRampToValueAtTime(659.25, now + 0.12); // E5
+                    gain.gain.setValueAtTime(0.08, now);
+                    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+                    osc.start(now);
+                    osc.stop(now + 0.26);
+                } else if (type === 'success') {
+                    osc.type = 'triangle';
+                    osc.frequency.setValueAtTime(523.25, now);
+                    osc.frequency.setValueAtTime(659.25, now + 0.1);
+                    osc.frequency.setValueAtTime(783.99, now + 0.2);
+                    gain.gain.setValueAtTime(0.1, now);
+                    gain.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
+                    osc.start(now);
+                    osc.stop(now + 0.46);
+                }
+            } catch (e) {
+                // Abaikan jika browser membatasi audio
+            }
+        }
+
+        function toggleAudio() {
+            appState.soundOn = !appState.soundOn;
+            document.getElementById('audioIcon').textContent = appState.soundOn ? '🔔' : '🔕';
+            document.getElementById('audioText').textContent = appState.soundOn ? 'Suara On' : 'Suara Off';
+            if (appState.soundOn) playChime('soft');
+        }
+
+        function addEmpathyPoints(pts) {
+            appState.empathyPoints += pts;
+            document.getElementById('empathyPoints').textContent = appState.empathyPoints;
+
+            const rankEl = document.getElementById('ambassadorRankBadge');
+            if (appState.empathyPoints >= 150) {
+                rankEl.textContent = '👑 Duta Utama Anti Kekerasan';
+            } else if (appState.empathyPoints >= 80) {
+                rankEl.textContent = '🛡️ Penggerak Empati Madrasah';
+            } else {
+                rankEl.textContent = '🌱 Sahabat Peduli';
+            }
+        }
+
+        // =====================================================================
+        // 5. NAVIGASI MODUL
+        // =====================================================================
+        function switchModule(modName) {
+            playChime('soft');
+            appState.activeModule = modName;
+            ['peta', 'simulasi', 'alur', 'sertifikasi'].forEach(m => {
+                const btn = document.getElementById(`nav-${m}`);
+                const sec = document.getElementById(`module-${m}`);
+                if (m === modName) {
+                    btn.className = 'nav-tab btn-interactive py-2.5 px-3 rounded-xl font-display font-bold text-xs sm:text-sm flex items-center justify-center gap-2 bg-white text-skyDeep shadow-sm border border-sky-200';
+                    sec.classList.remove('hidden');
+                } else {
+                    btn.className = 'nav-tab btn-interactive py-2.5 px-3 rounded-xl font-display font-bold text-xs sm:text-sm flex items-center justify-center gap-2 text-slate-600 hover:bg-white/60';
+                    sec.classList.add('hidden');
+                }
+            });
+
+            if (modName === 'sertifikasi') {
+                updateCardPreview();
+            }
+        }
+
+        // =====================================================================
+        // 6. RENDER MODUL 1: PETA 6 BENTUK KEKERASAN
+        // =====================================================================
+        function renderSixForms() {
+            const grid = document.getElementById('sixFormsGrid');
+            grid.innerHTML = SIX_FORMS_DATA.map(item => {
+                const isActive = appState.activeFormId === item.id;
+                const isExplored = appState.exploredForms[item.id];
+                return `
+                    <button onclick="selectSixForm('${item.id}')"
+                        class="btn-interactive text-left p-3.5 rounded-2xl border transition-all flex flex-col justify-between gap-2 ${isActive ? 'bg-white border-2 border-skyDeep shadow-md ring-4 ring-skyBase' : 'bg-white/80 border-sky-200 hover:bg-white'}">
+                        <div class="flex items-center justify-between">
+                            <span class="w-9 h-9 rounded-xl ${item.accentBg} ${item.accentText} flex items-center justify-center text-lg font-bold">
+                                ${item.icon}
+                            </span>
+                            <span class="text-[11px] font-extrabold px-2 py-0.5 rounded-full ${isExplored ? 'bg-mintSoft text-mintDeep' : 'bg-slate-100 text-slate-500'}">
+                                ${isExplored ? '✓ Dipelajari' : `#${item.num}`}
+                            </span>
+                        </div>
+                        <div>
+                            <div class="text-[10px] font-extrabold text-slate-400 uppercase">Bentuk ${item.num}</div>
+                            <div class="font-display font-extrabold text-xs sm:text-sm text-slateInk leading-snug">
+                                ${item.title}
+                            </div>
+                        </div>
+                    </button>
+                `;
+            }).join('');
+
+            document.getElementById('exploredFormsCount').textContent = Object.keys(appState.exploredForms).length;
+            renderFormDetail();
+        }
+
+        function selectSixForm(id) {
+            appState.activeFormId = id;
+            if (!appState.exploredForms[id]) {
+                appState.exploredForms[id] = true;
+                addEmpathyPoints(10);
+                playChime('success');
+            } else {
+                playChime('soft');
+            }
+            renderSixForms();
+        }
+
+        function renderFormDetail() {
+            const item = SIX_FORMS_DATA.find(f => f.id === appState.activeFormId);
+            const container = document.getElementById('formDetailContainer');
+
+            container.innerHTML = `
+                <div class="p-5 sm:p-7 space-y-6 animate-enter">
+                    <!-- Header Kartu Detail -->
+                    <div class="flex flex-wrap items-center justify-between gap-3 border-b border-sky-100 pb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl ${item.accentBg} flex items-center justify-center text-2xl border border-sky-200">
+                                ${item.icon}
+                            </div>
+                            <div>
+                                <span class="text-xs font-extrabold text-skyDeep uppercase tracking-wider">Bentuk Kekerasan #${item.num} • ${item.badge}</span>
+                                <h3 class="text-xl sm:text-2xl font-extrabold text-slateInk">${item.title}</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grid Visual Adegan & Penjelasan Konteks Madrasah -->
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                        <div class="lg:col-span-5 space-y-2">
+                            ${item.svgScene}
+                            <p class="text-[11px] text-center font-bold text-slate-500">${item.sceneCaption}</p>
+                        </div>
+
+                        <div class="lg:col-span-7 space-y-4">
+                            <div class="bg-skyBase/40 border border-sky-200 rounded-2xl p-4">
+                                <h4 class="font-display font-extrabold text-xs uppercase tracking-wider text-skyDeep mb-1">
+                                    📌 Definisi Regulasi PPKSP:
+                                </h4>
+                                <p class="text-sm font-semibold text-slateInk leading-relaxed">${item.definition}</p>
+                            </div>
+
+                            <div class="bg-lemonSoft/50 border border-lemonBright/70 rounded-2xl p-4">
+                                <h4 class="font-display font-extrabold text-xs uppercase tracking-wider text-lemonDeep mb-1">
+                                    🏫 Situasi Nyata di Lingkungan Remaja MA:
+                                </h4>
+                                <p class="text-sm font-semibold text-slateInk leading-relaxed">${item.madrasahContext}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Perbandingan Kritis: Candaan Biasa vs Bentuk Kekerasan -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-mintSoft/60 border border-mintBright/60 rounded-2xl p-4">
+                            <div class="flex items-center gap-2 font-display font-extrabold text-sm text-mintDeep mb-1.5">
+                                <span>✅</span> Dinamika Sehat / Candaan Setara
+                            </div>
+                            <p class="text-xs sm:text-sm font-semibold text-slate-700 leading-relaxed">
+                                ${item.banterVsViolence.banter}
+                            </p>
+                        </div>
+                        <div class="bg-rose-50/90 border border-rose-200 rounded-2xl p-4">
+                            <div class="flex items-center gap-2 font-display font-extrabold text-sm text-rose-700 mb-1.5">
+                                <span>🚫</span> Batas Pelanggaran (Kekerasan PPKSP)
+                            </div>
+                            <p class="text-xs sm:text-sm font-semibold text-slate-700 leading-relaxed">
+                                ${item.banterVsViolence.violence}
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Analisis Psikologis Dampak pada Korban -->
+                    <div class="bg-slate-50 border border-sky-200/80 rounded-2xl p-4 sm:p-5 space-y-3">
+                        <h4 class="font-display font-extrabold text-sm text-slateInk flex items-center gap-2">
+                            <span>🧠</span> Analisis Psikologis: Dampak pada Siswa yang Mengalami
+                        </h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                            ${item.psychologicalImpact.map(imp => `
+                                <div class="bg-white p-3.5 rounded-xl border border-sky-100 shadow-sm">
+                                    <div class="text-xs font-extrabold text-skyDeep uppercase mb-1">Aspek ${imp.area}</div>
+                                    <p class="text-xs font-semibold text-slate-600 leading-relaxed">${imp.desc}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // =====================================================================
+        // 7. RENDER MODUL 2: SIMULASI KEPUTUSAN (ACTIVE BYSTANDER)
+        // =====================================================================
+        function renderSimulations() {
+            const row = document.getElementById('scenarioSelectorRow');
+            row.innerHTML = SCENARIOS_DATA.map((sc, idx) => {
+                const isActive = appState.activeScenarioIdx === idx;
+                const isDone = appState.scenarioAnswers[sc.id] !== undefined;
+                return `
+                    <button onclick="selectScenario(${idx})"
+                        class="btn-interactive text-left p-3.5 rounded-2xl border transition-all flex flex-col justify-between gap-2 ${isActive ? 'bg-white border-2 border-skyDeep shadow-md ring-4 ring-lemonSoft' : 'bg-white/80 border-sky-200 hover:bg-white'}">
+                        <div class="flex items-center justify-between">
+                            <span class="text-[10px] font-extrabold text-skyDeep uppercase">${sc.tag.split('•')[0]}</span>
+                            <span class="text-[11px] font-extrabold px-2 py-0.5 rounded-full ${isDone ? 'bg-mintSoft text-mintDeep' : 'bg-lemonSoft text-lemonDeep'}">
+                                ${isDone ? '✓ Selesai' : 'Pilih'}
+                            </span>
+                        </div>
+                        <div class="font-display font-extrabold text-xs sm:text-sm text-slateInk leading-snug">
+                            ${sc.title}
+                        </div>
+                    </button>
+                `;
+            }).join('');
+
+            document.getElementById('completedSimCount').textContent = Object.keys(appState.scenarioAnswers).length;
+            renderScenarioStage();
+        }
+
+        function selectScenario(idx) {
+            playChime('soft');
+            appState.activeScenarioIdx = idx;
+            renderSimulations();
+        }
+
+        function renderScenarioStage() {
+            const sc = SCENARIOS_DATA[appState.activeScenarioIdx];
+            const chosenIdx = appState.scenarioAnswers[sc.id];
+            const stage = document.getElementById('scenarioStage');
+
+            stage.innerHTML = `
+                <div class="space-y-5 animate-enter">
+                    <!-- Info Lokasi & Tokoh -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 border-b border-sky-100 pb-3">
+                        <div>
+                            <span class="text-xs font-extrabold text-skyDeep">${sc.tag}</span>
+                            <h3 class="text-lg sm:text-xl font-extrabold text-slateInk">${sc.title}</h3>
+                        </div>
+                        <div class="text-xs font-bold text-slate-600 bg-skyBase/60 px-3 py-1.5 rounded-xl border border-sky-200">
+                            📍 ${sc.location}
+                        </div>
+                    </div>
+
+                    <!-- Kotak Narasi Cerita -->
+                    <div class="bg-gradient-to-br from-skyBase/50 via-white to-lemonSoft/40 border-2 border-sky-200 rounded-2xl p-4 sm:p-5 space-y-2">
+                        <div class="text-xs font-extrabold text-slate-500 uppercase">
+                            Tokoh Terlibat: <span class="text-slateInk">${sc.character}</span>
+                        </div>
+                        <p class="text-sm sm:text-base font-semibold text-slateInk leading-relaxed">
+                            ${sc.story}
+                        </p>
+                    </div>
+
+                    <!-- Pilihan Tindakan -->
+                    <div class="space-y-2.5">
+                        <h4 class="font-display font-extrabold text-sm text-slateInk">
+                            🤔 Sebagai siswa MAN 2 Kota Malang, tindakan mana yang akan kamu pilih?
+                        </h4>
+                        <div class="space-y-2.5">
+                            ${sc.options.map((opt, oIdx) => {
+                                const isSelected = chosenIdx === oIdx;
+                                let btnStyle = 'bg-white border-sky-200 hover:border-skyDeep hover:bg-skyBase/30';
+                                if (chosenIdx !== undefined) {
+                                    if (isSelected && opt.isOptimal) btnStyle = 'bg-mintSoft/80 border-2 border-mintDeep ring-2 ring-mintBright/50';
+                                    else if (isSelected && !opt.isOptimal) btnStyle = 'bg-lemonSoft/80 border-2 border-lemonDeep';
+                                    else if (opt.isOptimal) btnStyle = 'bg-mintSoft/40 border border-mintDeep';
+                                    else btnStyle = 'bg-slate-50 border-slate-200 opacity-65';
+                                }
+                                return `
+                                    <button onclick="chooseScenarioOption('${sc.id}', ${oIdx})"
+                                        class="btn-interactive w-full text-left p-4 rounded-2xl border transition-all flex items-start gap-3 ${btnStyle}">
+                                        <span class="w-7 h-7 rounded-full bg-skyBase text-skyDeep font-display font-extrabold text-xs flex items-center justify-center shrink-0 mt-0.5">
+                                            ${String.fromCharCode(65 + oIdx)}
+                                        </span>
+                                        <span class="text-xs sm:text-sm font-bold text-slateInk leading-relaxed">${opt.text}</span>
+                                    </button>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+
+                    <!-- Umpan Balik Psikologis & TPPK -->
+                    ${chosenIdx !== undefined ? (() => {
+                        const picked = sc.options[chosenIdx];
+                        return `
+                            <div class="rounded-2xl p-4 sm:p-5 border-2 animate-enter ${picked.isOptimal ? 'bg-mintSoft/60 border-mintDeep' : 'bg-lemonSoft/60 border-lemonDeep'}">
+                                <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+                                    <span class="px-3 py-1 rounded-full text-xs font-extrabold ${picked.isOptimal ? 'bg-mintDeep text-white' : 'bg-lemonDeep text-white'}">
+                                        ${picked.badge} (+${picked.points} Poin Empati)
+                                    </span>
+                                </div>
+                                <h5 class="font-display font-extrabold text-base text-slateInk mb-1">${picked.feedbackTitle}</h5>
+                                <p class="text-xs sm:text-sm font-semibold text-slate-700 leading-relaxed">${picked.feedbackBody}</p>
+                            </div>
+                        `;
+                    })() : ''}
+                </div>
+            `;
+        }
+
+        function chooseScenarioOption(scenId, optIdx) {
+            const sc = SCENARIOS_DATA.find(s => s.id === scenId);
+            const firstTime = appState.scenarioAnswers[scenId] === undefined;
+            appState.scenarioAnswers[scenId] = optIdx;
+
+            const chosen = sc.options[optIdx];
+            if (firstTime) {
+                addEmpathyPoints(chosen.points);
+            }
+            playChime(chosen.isOptimal ? 'success' : 'soft');
+            renderSimulations();
+        }
+
+        // =====================================================================
+        // 8. RENDER MODUL 3: ALUR TPPK & SIMULASI KOTAK LAPOR
+        // =====================================================================
+        function renderTppkFlow() {
+            const container = document.getElementById('tppkStepsContainer');
+            container.innerHTML = TPPK_FLOW_STEPS.map((st, idx) => {
+                const isOpen = appState.activeTppkStep === idx;
+                return `
+                    <div class="rounded-2xl border transition-all overflow-hidden ${isOpen ? 'bg-skyBase/60 border-skyDeep shadow-sm' : 'bg-white border-sky-200'}">
+                        <button onclick="selectTppkStep(${idx})" class="w-full text-left p-3.5 flex items-center justify-between gap-3">
+                            <div class="flex items-center gap-3">
+                                <span class="w-8 h-8 rounded-xl font-display font-extrabold text-sm flex items-center justify-center shrink-0 ${isOpen ? 'bg-skyDeep text-white' : 'bg-skyBase text-skyDeep'}">
+                                    ${st.step}
+                                </span>
+                                <div>
+                                    <div class="font-display font-extrabold text-xs sm:text-sm text-slateInk">${st.title}</div>
+                                    <div class="text-[11px] font-bold text-skyDeep">${st.time}</div>
+                                </div>
+                            </div>
+                            <span class="text-xs font-extrabold text-slate-400">${isOpen ? '▲' : '▼'}</span>
+                        </button>
+                        ${isOpen ? `
+                            <div class="px-4 pb-4 pt-1 text-xs sm:text-sm font-semibold text-slate-700 leading-relaxed border-t border-sky-200/70">
+                                ${st.desc}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function selectTppkStep(idx) {
+            playChime('soft');
+            appState.activeTppkStep = idx;
+            renderTppkFlow();
+        }
+
+        function fillExampleReport() {
+            playChime('soft');
+            document.getElementById('simChronology').value = 'Kemarin sepulang kegiatan ekstrakurikuler, foto candid teman saya diedit menjadi stiker ejekan dan disebar di grup angkatan sehingga ia malu dan tidak mau masuk kelas hari ini.';
+        }
+
+        function submitSimulatedReport(e) {
+            e.preventDefault();
+            const role = document.querySelector('input[name="reporterRole"]:checked').value;
+            const category = document.getElementById('simCategory').value;
+            const chrono = document.getElementById('simChronology').value.trim();
+
+            if (!chrono) {
+                fillExampleReport();
+            }
+
+            playChime('success');
+            addEmpathyPoints(20);
+
+            const ticketCode = 'TPPK-M2M-' + Math.floor(1000 + Math.random() * 9000);
+            const resultBox = document.getElementById('simReportResult');
+            resultBox.classList.remove('hidden');
+            resultBox.innerHTML = `
+                <div class="flex items-center justify-between">
+                    <span class="bg-mintDeep text-white text-[11px] font-extrabold px-2.5 py-0.5 rounded-full">
+                        ✅ SIMULASI LAPORAN DITERIMA (+20 Poin Empati)
+                    </span>
+                    <span class="font-mono text-xs font-extrabold text-skyDeep">${ticketCode}</span>
+                </div>
+                <h4 class="font-display font-extrabold text-sm text-slateInk">
+                    Respons Otomatis Sistem Perlindungan TPPK MAN 2 Kota Malang:
+                </h4>
+                <ul class="text-xs font-semibold text-slate-700 space-y-1 list-disc pl-4">
+                    <li><strong>Status Pelapor (${role}):</strong> Identitas dienkripsi & dijamin kerahasiaannya oleh koordinator TPPK.</li>
+                    <li><strong>Kategori Kasus:</strong> ${category}.</li>
+                    <li><strong>Tindak Lanjut Segera:</strong> Guru BK & Tim TPPK menjadwalkan asesmen aman serta pendampingan psikologis korban dalam 1×24 jam.</li>
+                </ul>
+            `;
+        }
+
+        // =====================================================================
+        // 9. RENDER MODUL 4: KUIS SERTIFIKASI & GENERATOR KARTU DIGITAL PNG
+        // =====================================================================
+        function renderCertificationQuiz() {
+            const container = document.getElementById('certificationQuizList');
+            container.innerHTML = CERT_QUIZ_DATA.map((item, qIdx) => {
+                const chosen = appState.quizAnswers[qIdx];
+                return `
+                    <div class="bg-white border border-sky-200 rounded-2xl p-4 space-y-2.5">
+                        <p class="font-display font-bold text-xs sm:text-sm text-slateInk leading-snug">${item.q}</p>
+                        <div class="space-y-1.5">
+                            ${item.opts.map((opt, oIdx) => {
+                                let cls = 'bg-skyBase/30 border-sky-200 hover:bg-skyBase/60 text-slateInk';
+                                if (chosen !== undefined) {
+                                    if (oIdx === item.ans) cls = 'bg-mintSoft border-mintDeep text-mintDeep font-extrabold';
+                                    else if (oIdx === chosen) cls = 'bg-rose-50 border-rose-300 text-rose-700';
+                                    else cls = 'bg-slate-50 border-slate-200 text-slate-400';
+                                }
+                                return `
+                                    <button onclick="answerCertQuiz(${qIdx}, ${oIdx})"
+                                        class="w-full text-left px-3 py-2 rounded-xl border text-xs font-semibold transition-all ${cls}">
+                                        ${opt}
+                                    </button>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            updateQuizScoreAndCard();
+        }
+
+        function answerCertQuiz(qIdx, oIdx) {
+            const firstTime = appState.quizAnswers[qIdx] === undefined;
+            appState.quizAnswers[qIdx] = oIdx;
+            const isCorrect = oIdx === CERT_QUIZ_DATA[qIdx].ans;
+
+            if (firstTime && isCorrect) {
+                addEmpathyPoints(15);
+            }
+            playChime(isCorrect ? 'success' : 'soft');
+            renderCertificationQuiz();
+        }
+
+        function getCorrectQuizCount() {
+            let correct = 0;
+            CERT_QUIZ_DATA.forEach((item, idx) => {
+                if (appState.quizAnswers[idx] === item.ans) correct++;
+            });
+            return correct;
+        }
+
+        function updateQuizScoreAndCard() {
+            const correct = getCorrectQuizCount();
+            document.getElementById('quizScoreTag').textContent = `Skor: ${correct} / 5`;
+            updateCardPreview();
+        }
+
+        function updateCardPreview() {
+            const correct = getCorrectQuizCount();
+            const pledged = document.getElementById('pledgeCheckbox').checked;
+            const rawName = document.getElementById('studentNameInput').value.trim();
+            const rawClass = document.getElementById('studentClassInput').value.trim();
+
+            const studentName = rawName || 'DUTA MUDA MAN 2 MALANG';
+            const studentClass = rawClass || 'Siswa Madrasah Aliyah';
+            const isEligible = correct >= 4 && pledged;
+
+            const statusEl = document.getElementById('certRequirementStatus');
+            const dlBtn = document.getElementById('downloadCardBtn');
+
+            if (isEligible) {
+                statusEl.className = 'bg-mintSoft border border-mintDeep rounded-2xl p-3 text-xs font-extrabold text-mintDeep';
+                statusEl.innerHTML = '🎉 Selamat! Syarat terpenuhi. Masukkan Nama & Kelasmu, lalu unduh Kartu Duta Anti Kekerasan!';
+                dlBtn.disabled = false;
+                dlBtn.className = 'btn-interactive w-full py-3.5 rounded-2xl font-display font-extrabold text-sm flex items-center justify-center gap-2 bg-gradient-to-r from-skyDeep via-mintDeep to-emerald-600 text-white shadow-lg cursor-pointer';
+            } else {
+                statusEl.className = 'bg-lemonSoft/80 border border-lemonBright rounded-2xl p-3 text-xs font-bold text-slateInk';
+                statusEl.innerHTML = `⚠️ Progres: Skor Kuis <strong>${correct}/5</strong> (min. 4) & Ikrar <strong>${pledged ? 'Sudah Dicentang ✓' : 'Belum Dicentang'}</strong>.`;
+                dlBtn.disabled = true;
+                dlBtn.className = 'w-full py-3.5 rounded-2xl font-display font-extrabold text-sm flex items-center justify-center gap-2 bg-slate-200 text-slate-400 cursor-not-allowed';
+            }
+
+            drawIdCardCanvas(studentName, studentClass, correct, isEligible);
+        }
+
+        // Menggambar Kartu Identitas Digital Aesthetic di HTML5 Canvas
+        function drawIdCardCanvas(name, className, quizScore, isUnlocked) {
+            const canvas = document.getElementById('idCardCanvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            const W = canvas.width;
+            const H = canvas.height;
+
+            // Latar Gradasi Ceria (Biru Muda Langit -> Putih -> Hijau Pastel)
+            const bgGrad = ctx.createLinearGradient(0, 0, W, H);
+            bgGrad.addColorStop(0, '#E0F2FE');
+            bgGrad.addColorStop(0.55, '#FFFFFF');
+            bgGrad.addColorStop(1, '#DCFCE7');
+            ctx.fillStyle = bgGrad;
+            ctx.fillRect(0, 0, W, H);
+
+            // Dekorasi Lingkaran Lembut
+            ctx.fillStyle = 'rgba(250, 204, 21, 0.25)';
+            ctx.beginPath();
+            ctx.arc(W - 60, 65, 95, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.fillStyle = 'rgba(56, 189, 248, 0.16)';
+            ctx.beginPath();
+            ctx.arc(70, H - 40, 110, 0, Math.PI * 2);
+            ctx.fill();
+
+            // Bingkai Kartu
+            ctx.strokeStyle = '#0284C7';
+            ctx.lineWidth = 6;
+            roundRect(ctx, 14, 14, W - 28, H - 28, 28, false, true);
+
+            // Header Pita Atas
+            const headerGrad = ctx.createLinearGradient(30, 30, W - 30, 105);
+            headerGrad.addColorStop(0, '#0284C7');
+            headerGrad.addColorStop(1, '#16A34A');
+            ctx.fillStyle = headerGrad;
+            roundRect(ctx, 30, 28, W - 60, 76, 18, true, false);
+
+            ctx.fillStyle = '#FEF08A';
+            ctx.font = '800 15px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText('TIM PENCEGAHAN & PENANGANAN KEKERASAN (TPPK)', 52, 58);
+
+            ctx.fillStyle = '#FFFFFF';
+            ctx.font = '800 22px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText('MAN 2 KOTA MALANG', 52, 86);
+
+            // Emblem Lencana Kanan Atas
+            ctx.fillStyle = '#FACC15';
+            ctx.beginPath();
+            ctx.arc(W - 76, 66, 24, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.strokeStyle = '#FFFFFF';
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            ctx.fillStyle = '#0F172A';
+            ctx.font = '800 20px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('🛡️', W - 76, 73);
+            ctx.textAlign = 'left';
+
+            // Label Gelar Duta
+            ctx.fillStyle = '#FEF08A';
+            roundRect(ctx, 36, 124, 290, 32, 12, true, false);
+            ctx.fillStyle = '#854D0E';
+            ctx.font = '800 14px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText('✨ KARTU IDENTITAS DUTA ANTI KEKERASAN', 50, 145);
+
+            // Nama Siswa
+            ctx.fillStyle = '#64748B';
+            ctx.font = '700 13px "Nunito", sans-serif';
+            ctx.fillText('NAMA DUTA:', 38, 185);
+
+            ctx.fillStyle = '#0F172A';
+            ctx.font = '800 30px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText(name.toUpperCase(), 38, 218);
+
+            // Kelas / Asrama
+            ctx.fillStyle = '#64748B';
+            ctx.font = '700 13px "Nunito", sans-serif';
+            ctx.fillText('KELAS / ASRAMA:', 38, 254);
+
+            ctx.fillStyle = '#0284C7';
+            ctx.font = '800 20px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText(className, 38, 280);
+
+            // Kotak Statistik Skor Empati di Kanan
+            ctx.fillStyle = '#FFFFFF';
+            ctx.strokeStyle = '#BAE6FD';
+            ctx.lineWidth = 2.5;
+            roundRect(ctx, W - 235, 168, 198, 124, 18, true, true);
+
+            ctx.fillStyle = '#16A34A';
+            ctx.font = '800 12px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText('SKOR EMPATI DUTA', W - 216, 196);
+
+            ctx.fillStyle = '#0F172A';
+            ctx.font = '800 32px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText(`${appState.empathyPoints} PTS`, W - 216, 234);
+
+            ctx.fillStyle = '#0284C7';
+            ctx.font = '700 13px "Nunito", sans-serif';
+            ctx.fillText(`Kompetensi Kasus: ${quizScore}/5`, W - 216, 260);
+            ctx.fillStyle = '#16A34A';
+            ctx.font = '800 12px "Nunito", sans-serif';
+            ctx.fillText(isUnlocked ? 'STATUS: TERVERIFIKASI ✓' : 'STATUS: BELUM AKTIF', W - 216, 280);
+
+            // Footer Ikrar Singkat
+            ctx.fillStyle = '#F0F9FF';
+            roundRect(ctx, 30, 315, W - 60, 88, 16, true, false);
+
+            ctx.fillStyle = '#0F172A';
+            ctx.font = '700 13px "Nunito", sans-serif';
+            ctx.fillText('"Berani peduli, menolak perundungan & kekerasan di ruang nyata maupun digital,', 48, 344);
+            ctx.fillText('serta menjaga madrasah sebagai rumah belajar yang aman dan bermartabat."', 48, 364);
+
+            ctx.fillStyle = '#0284C7';
+            ctx.font = '800 12px monospace';
+            ctx.fillText('KODE IKRAR: #M2M-ANTIBULLYING-2026', 48, 388);
+        }
+
+        function roundRect(ctx, x, y, width, height, radius, fill, stroke) {
+            ctx.beginPath();
+            ctx.moveTo(x + radius, y);
+            ctx.lineTo(x + width - radius, y);
+            ctx.quadraticCurveTo(x + width, y, x + width, y + radius);
+            ctx.lineTo(x + width, y + height - radius);
+            ctx.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+            ctx.lineTo(x + radius, y + height);
+            ctx.quadraticCurveTo(x, y + height, x, y + height - radius);
+            ctx.lineTo(x, y + radius);
+            ctx.quadraticCurveTo(x, y, x + radius, y);
+            ctx.closePath();
+            if (fill) ctx.fill();
+            if (stroke) ctx.stroke();
+        }
+
+        function downloadIdCardPNG() {
+            playChime('success');
+            const canvas = document.getElementById('idCardCanvas');
+            const rawName = document.getElementById('studentNameInput').value.trim() || 'Duta_MAN2Malang';
+            const safeFileName = rawName.replace(/[^a-zA-Z0-9_-]/g, '_');
+
+            const link = document.createElement('a');
+            link.download = `Kartu_Duta_Anti_Kekerasan_${safeFileName}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+
+        // =====================================================================
+        // 10. INISIALISASI SAAT HALAMAN DIMUAT
+        // =====================================================================
+        window.onload = function () {
+            document.getElementById('empathyPoints').textContent = appState.empathyPoints;
+            renderSixForms();
+            renderSimulations();
+            renderTppkFlow();
+            renderCertificationQuiz();
+        };
+    </script>
+</body>
+</html>
